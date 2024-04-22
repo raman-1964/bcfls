@@ -1,0 +1,22 @@
+{
+  "name": "bcfls",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "embla-carousel-autoplay": "^8.0.2",
+    "embla-carousel-react": "^8.0.2",
+    "next": "14.2.2",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
