@@ -8,13 +8,13 @@ const NewsCard = () => {
     <div className="w-full mx-auto p-4 my-6 bg-[#f2f4fa] ">
       <div className="md:max-w-screen-xl mx-auto">
         <Heading heading="News" href="/news" />
-        <div className="flex gap-5">
+        <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 w-full">
           {[...Array(4).keys()].map(() => (
-            <div className="flex bg-white rounded-md p-2 flex-col items-start gap-3">
+            <div className="flex bg-white rounded-md p-2 flex-col items-center gap-3">
               <Image
                 src={Img3}
                 alt="logo"
-                className="w-[400px] h-[220px] rounded-lg"
+                className="w-[400px] h-[150px] rounded-lg"
               />
               <div>
                 <h1 className="text-black text-[1.3rem] font-semibold">

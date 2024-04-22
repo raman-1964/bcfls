@@ -11,7 +11,7 @@ const AboutUsCard = () => {
         <Image
           src={Img3}
           alt="logo"
-          className="w-[420px] h-[220px] rounded-lg"
+          className="w-[700px] h-[180px] rounded-lg"
         />
         <div>
           <h1 className="text-black text-xl font-normal">
