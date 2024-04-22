@@ -36,7 +36,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed w-full top-0 mx-auto z-50">
+    <nav className="fixed w-full top-0 mx-auto z-50">
       <div
         className={`w-full md:max-w-screen-xl ${
           isVisible
@@ -69,7 +69,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

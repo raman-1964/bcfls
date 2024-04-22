@@ -25,6 +25,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+body{
+  background-color: #FBFCFF;
+}
+
+.sky-gradient {
+  background: linear-gradient(180deg, #1288FE 11.07%, rgba(255, 255, 255, 0) 83.98%), #CCE6FF;
+ }
 
 @layer utilities {
   .text-balance {

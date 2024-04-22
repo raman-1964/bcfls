@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const Heading = ({ heading, ...props }) => {
   return (
-    <div className="flex justify-between items-center my-3">
-      <h1 className="text-black text-2xl font-normal">{heading}</h1>
-      <Link href={props.href}> Go to</Link>
+    <div className="flex justify-between items-center mb-4">
+      <h1 className="text-2xl drop-shadow-sm text-black/90 font-semibold tracking-tight">{heading}</h1>
+      <Link href={props.href} className="text-md inline text-gray-800 my-auto font-normal">See all</Link>
     </div>
   );
 };

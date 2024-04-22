@@ -19,13 +19,13 @@ const RecentVideos = ({ data }) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <div className="w-full mx-auto flex items-center flex-col">
-      <div className="w-[85%] ">
+    <div className="w-full mx-auto flex items-center flex-col py-10">
+      <div className="max-w-[1320px] mx-auto px-6 md:px-3 ">
         <Image
           layout="fixed"
           src={Img3}
           alt="logo"
-          className="w-full h-[30vh] rounded-md"
+          className="w-full h-[30vh] rounded-md object-cover"
         />
         <div className="relative">
           <div className="overflow-hidden mt-5" ref={emblaRef}>
