@@ -2,7 +2,7 @@ import AboutUsCard from "@/components/AboutUsCard";
 import Carousel from "@/components/Carousel";
 import NewsCard from "@/components/NewsCard";
 import Image from "next/image";
-import Img3 from "../assets/img3.jpg";
+import Img3 from "../../assets/img3.jpg";
 import RecentVideos from "@/components/RecentVideos";
 
 export default function Home() {
