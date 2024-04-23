@@ -3,6 +3,14 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { siteConfig } from "@/config/site";
 
+import { Oxygen } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const textFont = Oxygen({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+});
+
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: {
@@ -15,9 +23,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn(textFont.className)}>
         <Navbar />
-        <div className="mt-16">{children}</div>
+        <div className="mt-16 bg-[#FBFCFF]">{children}</div>
       </body>
     </html>
   );

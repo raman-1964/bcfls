@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Heading from "./Heading";
-import Img3 from "../assets/img3.jpg";
+import Img3 from "../../../assets/img3.jpg";
 
 const NewsCard = () => {
   return (

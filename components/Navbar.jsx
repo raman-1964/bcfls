@@ -1,8 +1,10 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [isVisible, setVisible] = useState(false);
   const [blinkyOn, setBlinkyOn] = useState(false);
 
@@ -54,17 +56,51 @@ const Navbar = () => {
             </div>
           </Link>
           <div className="space-x-4 md:block md:w-auto flex items-center justify-between w-full">
-            <button className="border-none text-black outline-none">
-              <Link href="/sign-in">Home</Link>
+            <button
+              className={`px-3 py-1 rounded-lg text-black outline-none ${
+                pathname === "/"
+                  ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
+                  : ""
+              }`}
+            >
+              <Link href="/">Home</Link>
             </button>
-            <button className="border-none text-black outline-none">
-              <Link href="/sign-up">Articles</Link>
+            <button
+              className={`px-3 py-1 rounded-lg text-black outline-none ${
+                pathname === "/about"
+                  ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
+                  : ""
+              }`}
+            >
+              <Link href="/about">About us</Link>
             </button>
-            <button className="border-none text-black outline-none">
-              <Link href="/sign-up">News</Link>
+            <button
+              className={`px-3 py-1 rounded-lg text-black outline-none ${
+                pathname === "/news"
+                  ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
+                  : ""
+              }`}
+            >
+              <Link href="/news">News/Events</Link>
             </button>
-            <button className="border-none text-black outline-none">
-              <Link href="/sign-up">Events</Link>
+            <button
+              className={`px-3 py-1 rounded-lg text-black outline-none ${
+                pathname === "/opportunities"
+                  ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
+                  : ""
+              }`}
+            >
+              <Link href="/opportunities">Opportunities</Link>
+            </button>
+
+            <button
+              className={`px-3 py-1 rounded-lg text-black outline-none ${
+                pathname === "/contact"
+                  ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
+                  : ""
+              }`}
+            >
+              <Link href="/contact">Contact Us</Link>
             </button>
           </div>
         </div>
