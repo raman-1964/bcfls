@@ -8,7 +8,7 @@ import { NextButton, PrevButton, usePrevNextButtons } from "./CarouselButton";
 const Carousel = ({ data, arrowBtnPlace }) => {
   const options = { loop: true };
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-    Autoplay({ delay: 4000 }),
+    Autoplay({ delay: 2000 }),
   ]);
 
   const onButtonAutoplayClick = useCallback(
