@@ -99,38 +99,9 @@ export default function Footer() {
                 <div className="flex flex-wrap items-top mb-6">
                   <div className="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
                     <span className="block uppercase text-gray-900 text-sm font-semibold mb-2 tracking-wide">
-                      Good Stuff
+                      Social media
                     </span>
                     <ul className="list-unstyled">
-                      <li>
-                        <a
-                          className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
-                          rel="noreferrer"
-                          href="https://help.prototypr.io"
-                          target="_blank"
-                        >
-                          Help
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
-                          rel="noreferrer"
-                          href="https://github.com/Prototypr"
-                          target="_blank"
-                        >
-                          Open Source
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://open.prototypr.io"
-                          target="_blank"
-                          className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
-                        >
-                          Prototypr Open
-                        </a>
-                      </li>
                       <li>
                         <a
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
@@ -151,61 +122,57 @@ export default function Footer() {
                           Instagram
                         </a>
                       </li>
+                      <li>
+                        <a
+                          className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
+                          rel="noreferrer"
+                          href="https://instagram.com/prototyprio"
+                          target="_blank"
+                        >
+                          Facebook
+                        </a>
+                      </li>
                     </ul>
                   </div>
                   <div className="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 ml-auto">
                     <span className="block uppercase text-gray-900 text-sm font-semibold mb-2 tracking-wide">
-                      Other Resources
+                      Navlink
                     </span>
                     <ul className="list-unstyled">
                       <li>
                         <a
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
-                          href="https://adobe.com/products/xd/adobe-fund.html"
-                          target="_blank"
+                          href="/about"
                         >
-                          Adobe Fund for Design
+                          About Us
                         </a>
                       </li>
                       <li>
                         <a
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
-                          href="https://grantfortheweb.org"
-                          target="_blank"
+                          href="/news"
                         >
-                          Grant for the Web
+                          News/Events
                         </a>
                       </li>
                       <li>
                         <a
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
-                          href="https://interledger.org/"
-                          target="_blank"
+                          href="/opportunities"
                         >
-                          Web Monetization
+                          Opportunities
                         </a>
                       </li>
                       <li>
                         <a
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
-                          href="https://letter.so"
-                          target="_blank"
+                          href="/contact"
                         >
-                          Mail by Letter
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
-                          rel="noreferrer"
-                          href="https://prototypr.io/privacy-policy/"
-                          target="_blank"
-                        >
-                          Privacy Policy
+                          Contact Us
                         </a>
                       </li>
                     </ul>

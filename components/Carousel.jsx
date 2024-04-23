@@ -1,15 +1,27 @@
 "use client";
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import "./embla.css";
-import { NextButton, PrevButton, usePrevNextButtons } from "./CarouselButton";
+import {
+  DotButton,
+  NextButton,
+  PrevButton,
+  usePrevNextButtons,
+} from "./CarouselButton";
 
-const Carousel = ({ data, arrowBtnPlace }) => {
+const Carousel = ({ data, arrowBtnPlace = "mid", showDots = false }) => {
   const options = { loop: true };
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
     Autoplay({ delay: 4000 }),
   ]);
+  const [scrollSnaps, setScrollSnaps] = useState([]);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [btnPlace, setbtnPlace] = useState(
+    arrowBtnPlace === "mid"
+      ? "absolute w-full bottom-[40%]"
+      : "absolute bottom-5 left-[45%] bg-blue-50 rounded-[1.5rem]"
+  );
 
   const onButtonAutoplayClick = useCallback(
     (callback) => {
@@ -26,6 +38,16 @@ const Carousel = ({ data, arrowBtnPlace }) => {
     },
     [emblaApi]
   );
+  const scrollTo = useCallback(
+    (index) => emblaApi && emblaApi.scrollTo(index),
+    [emblaApi]
+  );
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+    // setPrevBtnEnabled(emblaApi.canScrollPrev());
+    // setNextBtnEnabled(emblaApi.canScrollNext());
+  }, [emblaApi, setSelectedIndex]);
 
   const {
     prevBtnDisabled,
@@ -33,11 +55,13 @@ const Carousel = ({ data, arrowBtnPlace }) => {
     onPrevButtonClick,
     onNextButtonClick,
   } = usePrevNextButtons(emblaApi);
-  const [btnPlace, setbtnPlace] = useState(
-    arrowBtnPlace === "mid"
-      ? "absolute w-full bottom-[40%]"
-      : "absolute bottom-5 left-[45%] bg-blue-50 rounded-[1.5rem]"
-  );
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    setScrollSnaps(emblaApi.scrollSnapList());
+    emblaApi.on("select", onSelect);
+  }, [emblaApi, setScrollSnaps, onSelect]);
 
   return (
     <div className="relative my-10">
@@ -73,6 +97,17 @@ const Carousel = ({ data, arrowBtnPlace }) => {
           />
         </div>
       </div>
+      {showDots ? (
+        <div className="embla__dots">
+          {scrollSnaps.map((_, index) => (
+            <DotButton
+              key={index}
+              selected={index === selectedIndex}
+              onClick={() => scrollTo(index)}
+            />
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 };

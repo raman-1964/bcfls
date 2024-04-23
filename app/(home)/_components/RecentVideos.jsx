@@ -30,7 +30,6 @@ const RecentVideos = () => {
           className="w-full mb-10 h-[30vh] rounded-md object-cover"
         />
         <Carousel
-          arrowBtnPlace="mid"
           data={[...Array(5).keys()].map(() => (
             <div className="min-w-0 flex-grow flex-shrink-0 w-[31%] ml-5 flex items-center justify-center">
               <Image

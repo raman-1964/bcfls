@@ -8,18 +8,21 @@ import RecentVideos from "@/app/(home)/_components/RecentVideos";
 export default function Home() {
   return (
     <div>
-      <Carousel
-        data={[...Array(4).keys()].map(() => (
-          <div className="min-w-0 flex-grow flex-shrink-0 w-full flex items-center justify-center">
-            <Image
-              layout="fixed"
-              src={Img3}
-              alt="logo"
-              className="w-[85%] h-[70vh] rounded-md"
-            />
-          </div>
-        ))}
-      />
+      <div className="max-w-[1320px] mx-auto">
+        <Carousel
+          showDots={true}
+          data={[...Array(4).keys()].map(() => (
+            <div className="min-w-0 flex-grow flex-shrink-0 w-full flex items-center justify-center">
+              <Image
+                layout="fixed"
+                src={Img3}
+                alt="logo"
+                className="w-full h-[70vh] rounded-md"
+              />
+            </div>
+          ))}
+        />
+      </div>
 
       <AboutUsCard />
       <NewsCard />
