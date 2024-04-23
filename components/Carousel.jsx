@@ -13,7 +13,7 @@ import {
 const Carousel = ({ data, arrowBtnPlace = "mid", showDots = false }) => {
   const options = { loop: true };
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-    Autoplay({ delay: 4000 }),
+    Autoplay({ delay: 2000 }),
   ]);
   const [scrollSnaps, setScrollSnaps] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(0);

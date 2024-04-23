@@ -25,7 +25,7 @@ const AboutUsCard = () => {
           </p>
         </div>
         <div
-          class="absolute w-full h-full rounded-3xl bg-[url('/svg/gridSquare.svg')]  inset-0 [mask-image:linear-gradient(0deg,#eef2ff,rgba(238,242,255,0.8))]"
+          className="absolute w-full h-full rounded-3xl bg-[url('/svg/gridSquare.svg')]  inset-0 [mask-image:linear-gradient(0deg,#eef2ff,rgba(238,242,255,0.8))]"
           style={{ backgroundPosition: "10px 10px" }}
         ></div>
       </div>
