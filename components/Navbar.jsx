@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -65,15 +66,46 @@ const Navbar = () => {
             >
               <Link href="/">Home</Link>
             </button>
-            <button
-              className={`px-3 py-1 rounded-lg text-black outline-none hover:bg-[#eff6ff] hover:text-[#2352ba] ${
-                pathname === "/about"
-                  ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
-                  : ""
-              }`}
-            >
-              <Link href="/about">About us</Link>
-            </button>
+            <DropdownMenu.Root>
+              <DropdownMenu.Trigger asChild>
+                <button
+                  className={`px-3 py-1 rounded-lg text-black outline-none ${
+                    pathname === "/about"
+                      ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
+                      : ""
+                  }`}
+                >
+                  About us
+                </button>
+              </DropdownMenu.Trigger>
+
+              <DropdownMenu.Portal>
+                <DropdownMenu.Content
+                  className="z-20 p-4 min-w-[220px] mt-2 bg-white rounded-md shadow-[0px_10px_38px_-10px_rgba(22,_23,_24,_0.35),_0px_10px_20px_-15px_rgba(22,_23,_24,_0.2)] will-change-[opacity,transform] data-[side=top]:animate-slideDownAndFade data-[side=right]:animate-slideLeftAndFade data-[side=bottom]:animate-slideUpAndFade data-[side=left]:animate-slideRightAndFade"
+                  sideOffset={5}
+                >
+                  <Link href={"/about/information"}>
+                    {" "}
+                    <DropdownMenu.Item className="p-2 rounded-lg select-none outline-none  cursor-pointer font-medium leading-[1.2] text-[rgb(16,29,70)] mb-[5px] hover:bg-[rgb(240,244,255)] hover:text-[rgb(52,81,178)]">
+                      Information
+                    </DropdownMenu.Item>
+                  </Link>
+                  <Link href={"/about/people"}>
+                    {" "}
+                    <DropdownMenu.Item className="p-2 rounded-lg select-none outline-none  cursor-pointer font-medium leading-[1.2] text-[rgb(16,29,70)] mb-[5px] hover:bg-[rgb(240,244,255)] hover:text-[rgb(52,81,178)]">
+                      People
+                    </DropdownMenu.Item>
+                  </Link>
+                  <Link href={"/about/gallery"}>
+                    {" "}
+                    <DropdownMenu.Item className="p-2 rounded-lg select-none outline-none  cursor-pointer font-medium leading-[1.2] text-[rgb(16,29,70)] mb-[5px] hover:bg-[rgb(240,244,255)] hover:text-[rgb(52,81,178)]">
+                      Gallery
+                    </DropdownMenu.Item>
+                  </Link>
+                </DropdownMenu.Content>
+              </DropdownMenu.Portal>
+            </DropdownMenu.Root>
+
             <button
               className={`px-3 py-1 rounded-lg text-black outline-none hover:bg-[#eff6ff] hover:text-[#2352ba] ${
                 pathname === "/news-events"
