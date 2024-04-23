@@ -70,7 +70,7 @@ const Navbar = () => {
               <DropdownMenu.Trigger asChild>
                 <button
                   className={`px-3 py-1 rounded-lg text-black outline-none ${
-                    pathname === "/about"
+                    pathname.startsWith("/about")
                       ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
                       : ""
                   }`}

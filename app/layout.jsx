@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/site";
 
 import { Oxygen } from "next/font/google";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/Footer";
 
 const textFont = Oxygen({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <body className={cn(textFont.className)}>
         <Navbar />
         <div className="mt-16 bg-[#FBFCFF]">{children}</div>
+        <Footer />
       </body>
     </html>
   );
