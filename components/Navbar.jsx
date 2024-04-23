@@ -76,12 +76,12 @@ const Navbar = () => {
             </button>
             <button
               className={`px-3 py-1 rounded-lg text-black outline-none hover:bg-[#eff6ff] hover:text-[#2352ba] ${
-                pathname === "/news"
+                pathname === "/news-events"
                   ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
                   : ""
               }`}
             >
-              <Link href="/news">News/Events</Link>
+              <Link href="/news-events">News/Events</Link>
             </button>
             <button
               className={`px-3 py-1 rounded-lg text-black outline-none hover:bg-[#eff6ff] hover:text-[#2352ba] ${
