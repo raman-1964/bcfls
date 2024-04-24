@@ -39,7 +39,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed w-full top-0 mx-auto z-50">
+    <nav className="fixed w-full top-2 mx-auto z-50">
       <div
         className={`w-full md:max-w-[1320px] ${
           isVisible

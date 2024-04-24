@@ -4,5 +4,5 @@ export const metadata = {
 };
 
 export default function ContactLayout({ children }) {
-  return <div className="mt-16">{children}</div>;
+  return <div className="">{children}</div>;
 }

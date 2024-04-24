@@ -4,7 +4,7 @@ export const metadata = {
   description: "",
 };
 const NewsEventsLayout = ({ children }) => {
-  return <div className="mt-16">{children}</div>;
+  return <div className="">{children}</div>;
 };
 
 export default NewsEventsLayout;

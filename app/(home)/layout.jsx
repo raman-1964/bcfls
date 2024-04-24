@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function HomeLayout({ children }) {
   return (
-    <div className="mt-16">
+    <div className="">
       {children}
       <Footer />
     </div>

@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={cn(textFont.className)}>
         <Navbar />
-        <div className="mt-16 bg-[#FBFCFF]">{children}</div>
+        <div className="mt-14 bg-[#FBFCFF]">{children}</div>
         <Footer />
       </body>
     </html>
