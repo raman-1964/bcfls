@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
-
 const Navbar = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const [isVisible, setVisible] = useState(false);
   const [blinkyOn, setBlinkyOn] = useState(false);
 
@@ -63,13 +63,14 @@ const Navbar = () => {
                   ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
                   : ""
               }`}
+              onClick={() => router.push("/")}
             >
-              <Link href="/">Home</Link>
+              Home
             </button>
             <DropdownMenu.Root>
               <DropdownMenu.Trigger asChild>
                 <button
-                  className={`px-3 py-1 rounded-lg text-black outline-none ${
+                  className={`px-3 py-1 rounded-lg text-black outline-none hover:bg-[#eff6ff] hover:text-[#2352ba] ${
                     pathname.startsWith("/about")
                       ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
                       : ""
@@ -112,8 +113,9 @@ const Navbar = () => {
                   ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
                   : ""
               }`}
+              onClick={() => router.push("/news-events")}
             >
-              <Link href="/news-events">News/Events</Link>
+              News/Events
             </button>
             <button
               className={`px-3 py-1 rounded-lg text-black outline-none hover:bg-[#eff6ff] hover:text-[#2352ba] ${
@@ -121,8 +123,9 @@ const Navbar = () => {
                   ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
                   : ""
               }`}
+              onClick={() => router.push("/opportunities")}
             >
-              <Link href="/opportunities">Opportunities</Link>
+              Opportunities
             </button>
 
             <button
@@ -131,8 +134,9 @@ const Navbar = () => {
                   ? "bg-[#eff6ff] border-blue-200 border-[1px] !text-[#2352ba]"
                   : ""
               }`}
+              onClick={() => router.push("/contact")}
             >
-              <Link href="/contact">Contact Us</Link>
+              Contact Us
             </button>
           </div>
         </div>

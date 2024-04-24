@@ -80,7 +80,7 @@ export default function Footer() {
                         <a
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
-                          href="https://twitter.com/prototypr"
+                          href="#"
                           target="_blank"
                         >
                           Twitter
@@ -90,7 +90,7 @@ export default function Footer() {
                         <a
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
-                          href="https://instagram.com/prototyprio"
+                          href="#"
                           target="_blank"
                         >
                           Instagram
@@ -100,7 +100,7 @@ export default function Footer() {
                         <a
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
-                          href="https://instagram.com/prototyprio"
+                          href="#"
                           target="_blank"
                         >
                           Facebook
@@ -117,7 +117,7 @@ export default function Footer() {
                         <a
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
-                          href="/about"
+                          href="/about/information"
                         >
                           About Us
                         </a>

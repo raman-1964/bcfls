@@ -6,7 +6,7 @@ import Img3 from "../../../assets/img3.jpg";
 const AboutUsCard = () => {
   return (
     <div className="max-w-[1320px] mx-auto py-10 ">
-      <Heading heading="About Us" href="/about" />
+      <Heading heading="About Us" href="/about/information" />
       <div className="relative w-full shadow-sm border border-gray-300/50  flex h-full bg-[#eef2ff] lg:mt-8 rounded-3xl p-6">
         <Image
           src={Img3}
@@ -18,10 +18,16 @@ const AboutUsCard = () => {
             Foundation for creative social research{" "}
           </h1>
           <p className="text-black text-[1rem] font-normal">
-            The Foundation for Creative Social Research is an academic
-            initiative that actively promotes interdisciplinary exchange and
-            collaboration among diverse intellectuals, including scholars,
-            authors, artists, poets, activists, and policymakers.
+            India Centre for Policy Studies (ICPS) is a dynamic network of
+            scholars, activists, and experts across diverse sectors, committed
+            to inclusive development. Established in April 2018, ICPS actively
+            engages with policymakers to analyze the impact of government
+            policies on society. Through round table discussions and
+            collaboration with various stakeholders, including academia and
+            civil society, ICPS seeks to gather feedback and offer constructive
+            recommendations for policy improvement. With a focus on empowerment
+            and social justice, ICPS strives to foster dialogue and influence
+            positive change for all sections of society.
           </p>
         </div>
         <div

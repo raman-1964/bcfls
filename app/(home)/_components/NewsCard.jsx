@@ -15,7 +15,7 @@ const NewsCard = () => {
           loading="lazy"
         ></img>
         <div className="max-w-[1320px] mx-auto  pb-20 relative z-10 mt-20">
-          <Heading heading="News" href="/news" />
+          <Heading heading="News" href="/news-events" />
           <div className="flex gap-3 w-full">
             {[...Array(3).keys()].map(() => (
               <div className="flex group hover:shadow-lg hover:scale-[1.005] h-full sm:mt-0 flex-col hover:bg-white  transition-all duration-300 p-3 bg-white shadow-sm border border-gray-300/60 rounded-2xl font-inter w-full">
