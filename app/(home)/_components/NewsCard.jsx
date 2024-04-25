@@ -26,16 +26,15 @@ const NewsCard = () => {
                 />
                 <div className="mt-3 flex flex-col px-[10px] justify-between h-full">
                   <h1 className="text-lg tracking-tight mb-3 font-medium leading-snug line-clamp-2">
-                    Foundation for Creative Social Research
-                  </h1>
+                  India Centre for Policy Studies                  </h1>
                   <p className="mb-6 text-gray-600 line-clamp-2">
-                    The Foundation Social Research is an academic initiative
+                  India Centre for Policy Studies is an academic initiative
                     interdisciplinary exchange and collaboration amo luding
                     scholars.
                   </p>
                   <div className="flex my-auto flex-wrap">
                     <h2 className="line-clamp-1 my-auto font-regular text-sm">
-                      Seungmee Lee
+                      Rohan Kumar
                     </h2>
                     <div className="px-1 text-sm my-auto text-gray-500 font-bold hidden md:inline-block">
                       ·

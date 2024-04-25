@@ -71,7 +71,7 @@ const Carousel = ({ data, arrowBtnPlace = "mid", showDots = false }) => {
 
       <div className={btnPlace}>
         <div
-          className={`embla__buttons ${
+          className={`embla__buttons px-4 ${
             arrowBtnPlace === "mid"
               ? "!w-full !flex items-center !justify-between"
               : ""

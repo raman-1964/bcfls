@@ -5,7 +5,7 @@ import Img3 from "../../../assets/img3.jpg";
 const AboutInfoPage = () => {
   return (
     <div className="w-full mx-auto pb-5">
-      <div className="mt-4 h-[60%] w-full bg-gradient-to-b from-blue-100/60 to-gray-100/20 absolute top-0 left-0"></div>
+      <div className="pt-4 h-[60%] w-full bg-gradient-to-b from-blue-100/60 to-gray-100/20 absolute top-0 left-0"></div>
       <div className="max-w-[1320px] mx-auto">
         <div
           className="relative -mt-[96px] md:-mt-0 pt-[64px] md:pt-0 mx-auto w-[1301px] border-b border-b-indigo-500/20 border-r border-indigo-500/10 max-w-full px-6 md:px-3"
@@ -23,7 +23,7 @@ const AboutInfoPage = () => {
           <div className="pb-[112px]">
             <div className="w-[1020px] max-w-full mx-auto">
               <h1 className="text-5xl tracking-tight md:text-6.5xl w-full leading-tight max-w-[44rem] text-black/90 font-inter font-bold text-left drop-shadow-sm">
-                Foundation for Creative Social Research
+                India Centre for Policy Studies
               </h1>
             </div>
           </div>
@@ -46,18 +46,18 @@ const AboutInfoPage = () => {
             academicians, researchers, civil societal and social activists,
             think-tank, institutes, advocates and students belonging to
             different fields. ICPS includes all the sections of the society and
-            work for their empowerment, it is dedicated to achieving ‘inclusive
-            development’.
+            work for their empowerment, it is dedicated to achieving "inclusive
+            development".
           </p>
           <p className="mb-3">
             ICPS was established on 14th April 2018, after few days it started
             working for its goals and targets. With the help of various
             participants like- academician, research scholars, social activist,
-            advocates, civil society etc., it is growing day-by-day. ICPS
-            studies and analyses different policies of the government to find
-            out how these policies are effecting people? How they are including
-            them? Which society they have in their focus? Which society or its
-            part they should focus?
+            advocates, civil society etc, it is growing day-by-day. ICPS studies
+            and analyses different policies of the government to find out how
+            these policies are effecting people? How they are including them?
+            Which society they have in their focus? Which society or its part
+            they should focus?
           </p>
           <p className="mb-3">
             ICPS discuss the policies, amendments, activeness, awareness about
@@ -73,19 +73,19 @@ const AboutInfoPage = () => {
           </p>
           <p className="mb-1">
             Purpose of ICPS: To ensure that each and every person receives the
-            benefit of the government policies’
+            benefit of the government policies
           </p>
           <p className="mb-3">
-            ICPS motto :‘To move towards a strong nation in which all the
-            citizens can prosper’
+            ICPS motto : To move towards a strong nation in which all the
+            citizens can prosper
           </p>
           <div className="my-auto mx-auto text-center pt-12">
             <div className="text-xs uppercase mb-4 mx-auto font-medium text-gray-600">
               Share to your friends
             </div>
-            <div className="my-auto px-1 grid grid-cols-3 gap-4 w-[fit-content] mx-auto">
+            <div className="my-auto px-1 grid grid-cols-2 gap-4 w-[fit-content] mx-auto">
               <div>
-                <a target="_blank" href="/">
+                <a target="_blank" href="https://twitter.com/Icpstudy2024">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="28"
@@ -106,7 +106,10 @@ const AboutInfoPage = () => {
                 </a>
               </div>
               <div>
-                <a target="_blank" href="/">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/indiacentreforpolicystudies/"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="28"
@@ -147,7 +150,7 @@ const AboutInfoPage = () => {
                   </svg>
                 </a>
               </div>
-              <div>
+              {/* <div>
                 <a target="_blank" href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +205,7 @@ const AboutInfoPage = () => {
                     <circle cx="88" cy="80" r="12"></circle>
                   </svg>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

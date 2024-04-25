@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Footer() {
@@ -12,7 +13,7 @@ export default function Footer() {
             <div className="flex flex-wrap">
               <div className="w-full md:w-6/12">
                 <p className="text-xl tracking-tight font-semibold">
-                  Get bcfls Weekly
+                  Get ICPS Weekly
                 </p>
                 <input className="hidden" value="hello@prototypr.io" />
                 <p className="text-base mt-0 text-gray-700">
@@ -66,7 +67,7 @@ export default function Footer() {
                 </div>
                 <p className="text-sm text-gray-700 font-semibold mt-2">
                   {" "}
-                  © 2024 bcfls, All rights reserved.
+                  © 2024 ICPS, All rights reserved.
                 </p>
               </div>
               <div className="w-full md:w-6/12">
@@ -77,25 +78,25 @@ export default function Footer() {
                     </span>
                     <ul className="list-unstyled">
                       <li>
-                        <a
+                        <Link
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
                           href="https://twitter.com/Icpstudy2024"
                           target="_blank"
                         >
                           Twitter
-                        </a>
+                        </Link>
                       </li>
 
                       <li>
-                        <a
+                        <Link
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
                           href="https://www.facebook.com/indiacentreforpolicystudies/"
                           target="_blank"
                         >
                           Facebook
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -105,40 +106,44 @@ export default function Footer() {
                     </span>
                     <ul className="list-unstyled">
                       <li>
-                        <a
+                        {" "}
+                        <Link
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
                           href="/about/information"
                         >
                           About Us
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        {" "}
+                        <Link
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
                           href="/news-events"
                         >
                           News/Events
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        {" "}
+                        <Link
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
                           href="/opportunities"
                         >
                           Opportunities
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        {" "}
+                        <Link
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
                           href="/contact"
                         >
                           Contact Us
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

@@ -1,6 +1,11 @@
 const OpportunitiesPage = () => {
   return (
     <div className="mx-auto max-w-[1320px] flex items-center flex-col">
+          <div class="inline-flex mt-4 mb-8">
+          <h2 class="mt-2 text-black/90 text-4xl font-semibold tracking-tighter lg:leading-tight md:leading-tight capitalize drop-shadow-sm ">
+           Join India Centre for Policy Studies
+          </h2>
+        </div>
       <div className="flex w-[25rem] items-start mb-3 flex-col gap-1">
         <label
           htmlFor="name"

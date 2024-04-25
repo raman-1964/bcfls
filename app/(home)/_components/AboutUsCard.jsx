@@ -15,7 +15,7 @@ const AboutUsCard = () => {
         />
         <div className="md:w-[65%] px-5 py-0 w-full  flex flex-col gap-4 z-10">
           <h1 className="text-xl tracking-tight sm:text-2xl mt-1 font-semibold line-clamp-4">
-            Foundation for creative social research{" "}
+          India Centre for Policy Studies
           </h1>
           <p className="text-black text-[1rem] font-normal">
             India Centre for Policy Studies (ICPS) is a dynamic network of

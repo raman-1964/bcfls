@@ -8,7 +8,7 @@ import RecentVideos from "@/app/(home)/_components/RecentVideos";
 export default function Home() {
   return (
     <div>
-      <div className="max-w-[1320px] mx-auto">
+      <div className=" mx-auto">
         <Carousel
           showDots={true}
           data={[...Array(4).keys()].map(() => (
@@ -41,7 +41,7 @@ export default function Home() {
                   </h3>
                   <p class="text-base text-black/70 mt-1">
                     To ensure that each and every person receives the benefit of
-                    the government policies’
+                    the government policies.
                   </p>
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default function Home() {
                   </h3>
                   <p class="text-base text-black/70 mt-1">
                     To move towards a strong nation in which all the citizens
-                    can prosper
+                    can prosper.
                   </p>
                 </div>
               </div>
