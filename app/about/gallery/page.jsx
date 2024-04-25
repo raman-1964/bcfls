@@ -4,7 +4,7 @@ import Link from "next/link";
 const AboutGalleryPage = () => {
   return (
     <div className="w-full mx-auto pb-5">
-      <div className="mt-4 h-[60%] w-full bg-gradient-to-b from-blue-100/60 to-gray-100/20 absolute top-0 left-0"></div>
+      <div className="pt-4 h-[60%] w-full bg-gradient-to-b from-blue-100/60 to-gray-100/20 absolute top-0 left-0"></div>
       <div className="max-w-[1320px] mx-auto">
         <div
           className="relative -mt-[96px] md:-mt-0 pt-[64px] md:pt-0 mx-auto w-[1301px] border-b border-b-indigo-500/20 border-r border-indigo-500/10 max-w-full px-6 md:px-3"
