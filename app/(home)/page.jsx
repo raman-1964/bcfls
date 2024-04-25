@@ -28,7 +28,7 @@ export default function Home() {
       <div class="py-16 pt-14  bg-[#ffffff] mx-auto px-6 md:px-3">
         <div class="max-w-[1320px] mx-auto">
           <div class=" flex-col grid gap-4 md:gap-6 grid-cols-12">
-            <a class="col-span-12 lg:col-span-6" href="/apply">
+            <a class="col-span-12 lg:col-span-6" href="/opportunities">
               <div class="flex h-[220px] bg-gray-50 group hover:scale-[1.005] hover:shadow-md transition transition-all duration-400 relative rounded-2xl shadow-sm border border-gray-300/60 w-full flex-col justify-center overflow-hidden p-6 py-0 md:py-6 md:p-6 text-white">
                 <img
                   src="/svg/jobs.svg"
@@ -46,7 +46,7 @@ export default function Home() {
                 </div>
               </div>
             </a>
-            <a class="col-span-12 lg:col-span-6" href="/apply">
+            <a class="col-span-12 lg:col-span-6" href="/opportunities">
               <div class="flex h-[220px] bg-gray-50 group hover:scale-[1.005] hover:shadow-md transition transition-all duration-400 relative rounded-2xl shadow-sm border border-gray-300/60 w-full flex-col justify-center overflow-hidden p-6 py-0 md:py-6 md:p-6 text-white">
                 <img
                   src="/svg/botty.svg"

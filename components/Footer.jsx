@@ -8,7 +8,7 @@ export default function Footer() {
     <>
       <footer className={`${pathname === "/" ? "bg-[#CCE6FF]" : "bg-white"}`}>
         <div className="max-w-[1320px] z-30 relative mx-auto px-6 md:px-3">
-          <div className="w-full max-w-screen-xl relative mx-auto py-16">
+          <div className="w-full max-w-screen-xl relative mx-auto pb-5 pt-14">
             <div className="flex flex-wrap">
               <div className="w-full md:w-6/12">
                 <p className="text-xl tracking-tight font-semibold">
@@ -80,27 +80,18 @@ export default function Footer() {
                         <a
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
-                          href="#"
+                          href="https://twitter.com/Icpstudy2024"
                           target="_blank"
                         >
                           Twitter
                         </a>
                       </li>
+
                       <li>
                         <a
                           className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
                           rel="noreferrer"
-                          href="#"
-                          target="_blank"
-                        >
-                          Instagram
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="text-gray-700 hover:text-gray-900 font-base block py-3 text-base"
-                          rel="noreferrer"
-                          href="#"
+                          href="https://www.facebook.com/indiacentreforpolicystudies/"
                           target="_blank"
                         >
                           Facebook

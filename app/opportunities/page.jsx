@@ -1,4 +1,4 @@
-const ApplyPage = () => {
+const OpportunitiesPage = () => {
   return (
     <div className="mx-auto max-w-[1320px] flex items-center flex-col">
       <div className="flex w-[25rem] items-start mb-3 flex-col gap-1">
@@ -111,4 +111,4 @@ const ApplyPage = () => {
   );
 };
 
-export default ApplyPage;
+export default OpportunitiesPage;
