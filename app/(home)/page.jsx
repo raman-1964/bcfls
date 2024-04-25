@@ -7,8 +7,8 @@ import RecentVideos from "@/app/(home)/_components/RecentVideos";
 
 export default function Home() {
   return (
-    <div>
-      <div className=" mx-auto">
+    <>
+      <div className="max-w-[1320px] px-2 mx-auto">
         <Carousel
           showDots={true}
           data={[...Array(4).keys()].map(() => (
@@ -68,6 +68,6 @@ export default function Home() {
         </div>
       </div>
       <RecentVideos />
-    </div>
+    </>
   );
 }
