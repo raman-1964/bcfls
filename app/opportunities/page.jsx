@@ -1,12 +1,12 @@
 const OpportunitiesPage = () => {
   return (
     <div className="mx-auto max-w-[1320px] flex items-center flex-col">
-          <div class="inline-flex mt-4 mb-8">
-          <h2 class="mt-2 text-black/90 text-4xl font-semibold tracking-tighter lg:leading-tight md:leading-tight capitalize drop-shadow-sm ">
-           Join India Centre for Policy Studies
-          </h2>
-        </div>
-      <div className="flex w-[25rem] items-start mb-3 flex-col gap-1">
+      <div class="inline-flex mt-4 mb-8">
+        <h2 class="mt-2 text-black/90 text-4xl font-semibold tracking-tighter lg:leading-tight md:leading-tight capitalize drop-shadow-sm ">
+          Join India Centre for Policy Studies
+        </h2>
+      </div>
+      <div className="flex w-[90vw] sm:w-[25rem] items-start mb-3 flex-col gap-1">
         <label
           htmlFor="name"
           className="w-full flex gap-2 font-bold text-[1rem]"
@@ -26,7 +26,7 @@ const OpportunitiesPage = () => {
           }}
         />
       </div>
-      <div className="flex w-[25rem] items-start mb-3 flex-col gap-1">
+      <div className="flex w-[90vw] sm:w-[25rem] items-start mb-3 flex-col gap-1">
         <label htmlFor="institute" className="w-full font-bold text-[1rem]">
           Institute
         </label>
@@ -40,7 +40,7 @@ const OpportunitiesPage = () => {
           }}
         />
       </div>
-      <div className="flex w-[25rem] items-start mb-3 flex-col gap-1">
+      <div className="flex w-[90vw] sm:w-[25rem] items-start mb-3 flex-col gap-1">
         <label htmlFor="qualification" className="w-full font-bold text-[1rem]">
           Qualification
         </label>
@@ -54,7 +54,7 @@ const OpportunitiesPage = () => {
           }}
         />
       </div>
-      <div className="flex w-[25rem] items-start mb-3 flex-col gap-1">
+      <div className="flex w-[90vw] sm:w-[25rem] items-start mb-3 flex-col gap-1">
         <label htmlFor="interest" className="w-full font-bold text-[1rem]">
           Area of Interest
         </label>
@@ -68,7 +68,7 @@ const OpportunitiesPage = () => {
           }}
         />
       </div>
-      <div className="flex w-[25rem] items-start mb-3 flex-col gap-1">
+      <div className="flex w-[90vw] sm:w-[25rem] items-start mb-3 flex-col gap-1">
         <label
           htmlFor="email"
           className="w-full flex gap-2 font-bold text-[1rem]"
@@ -88,7 +88,7 @@ const OpportunitiesPage = () => {
           }}
         />
       </div>
-      <div className="flex w-[25rem] items-start mb-3 flex-col gap-1">
+      <div className="flex w-[90vw] sm:w-[25rem] items-start mb-3 flex-col gap-1">
         <label
           htmlFor="phone"
           className="w-full flex gap-2 font-bold text-[1rem]"

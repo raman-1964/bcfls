@@ -31,7 +31,7 @@ const RecentVideos = () => {
         />
         <Carousel
           data={[...Array(5).keys()].map(() => (
-            <div className="min-w-0 flex-grow flex-shrink-0 w-[31%] ml-5 flex items-center justify-center">
+            <div className="min-w-0 flex-grow flex-shrink-0 w-full sm:w-[49%] md:w-[31%] ml-5 flex items-center justify-center">
               <Image
                 layout="fixed"
                 src={Img3}
