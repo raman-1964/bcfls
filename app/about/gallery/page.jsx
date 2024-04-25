@@ -19,15 +19,13 @@ const AboutGalleryPage = () => {
               Gallery
             </p>
           </div>
-          <div className="pb-[112px]">
-            <div className="w-[1020px] max-w-full mx-auto">
-              <h1 className="text-5xl tracking-tight md:text-6.5xl w-full leading-tight max-w-[44rem] text-black/90 font-inter font-bold text-left drop-shadow-sm">
-                India Centre for Policy Studies
-              </h1>
-            </div>
+          <div className="md:pb-[112px] w-[1020px] max-w-full mx-auto">
+            <h1 className=" text-5xl tracking-tight md:text-6.5xl w-full leading-tight max-w-[44rem] text-black/90 font-inter font-bold text-left drop-shadow-sm">
+              India Centre for Policy Studies
+            </h1>
           </div>
         </div>
-        <div className="px-4 md:px-0 max-w-full w-[1020px] mx-auto mt-[100px] md:-mt-[70px] relative md:rounded-2xl overflow-hidden">
+        <div className="px-4 md:px-0 max-w-full w-[1020px] mx-auto mt-[2rem] md:-mt-[70px] relative md:rounded-2xl overflow-hidden">
           {/* <div className="animate-pulse absolute top-0 left-0 duration-50 w-[1020px] md:bg-gray-100 mx-auto rounded-2xl"></div> */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 w-full">
             {[...Array(13).keys()].map((_, ind) => (

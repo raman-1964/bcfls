@@ -21,15 +21,13 @@ const AboutPeoplePage = () => {
               People
             </p>
           </div>
-          <div className="pb-[112px]">
-            <div className="w-[1020px] max-w-full mx-auto">
-              <h1 className="text-5xl tracking-tight md:text-6.5xl w-full leading-tight max-w-[44rem] text-black/90 font-inter font-bold text-left drop-shadow-sm">
-                India Centre for Policy Studies
-              </h1>
-            </div>
+          <div className="md:pb-[112px] w-[1020px] max-w-full mx-auto">
+            <h1 className="text-5xl tracking-tight md:text-6.5xl w-full leading-tight max-w-[44rem] text-black/90 font-inter font-bold text-left drop-shadow-sm">
+              India Centre for Policy Studies
+            </h1>
           </div>
         </div>
-        <div className="px-4 md:px-0 max-w-full w-[1020px] mx-auto mt-[100px] md:-mt-[70px] relative md:rounded-2xl overflow-hidden">
+        <div className="px-4 md:px-0 max-w-full w-[1020px] mx-auto mt-[2rem] md:-mt-[70px] relative md:rounded-2xl overflow-hidden">
           <div className="bg-white h-full p-3 border border-gray-300/50 shadow-sm group hover:shadow-lg hover:scale-[1.005] transition-all duration-300 rounded-2xl flex flex-col sm:flex-row  font-inter w-full ">
             <div className="lg:w-6/12 lg:h-[400px] h-[260px] w-full relative  rounded-xl overflow-hidden border border-gray-300/60">
               <Image

@@ -16,7 +16,7 @@ const NewsCard = () => {
         ></img>
         <div className="max-w-[1320px] mx-auto  pb-20 relative z-10 mt-20">
           <Heading heading="News" href="/news-events" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 w-full px-4 sm:px-0">
             {[...Array(3).keys()].map(() => (
               <div className="flex group hover:shadow-lg hover:scale-[1.005] h-full sm:mt-0 flex-col hover:bg-white  transition-all duration-300 p-3 bg-white shadow-sm border border-gray-300/60 rounded-2xl font-inter w-full">
                 <Image
@@ -26,9 +26,10 @@ const NewsCard = () => {
                 />
                 <div className="mt-3 flex flex-col px-[10px] justify-between h-full">
                   <h1 className="text-lg tracking-tight mb-3 font-medium leading-snug line-clamp-2">
-                  India Centre for Policy Studies                  </h1>
+                    India Centre for Policy Studies{" "}
+                  </h1>
                   <p className="mb-6 text-gray-600 line-clamp-2">
-                  India Centre for Policy Studies is an academic initiative
+                    India Centre for Policy Studies is an academic initiative
                     interdisciplinary exchange and collaboration amo luding
                     scholars.
                   </p>

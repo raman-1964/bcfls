@@ -2,7 +2,7 @@ const OpportunitiesPage = () => {
   return (
     <div className="mx-auto max-w-[1320px] flex items-center flex-col">
       <div class="inline-flex mt-4 mb-8">
-        <h2 class="mt-2 text-black/90 text-4xl font-semibold tracking-tighter lg:leading-tight md:leading-tight capitalize drop-shadow-sm ">
+        <h2 class="mt-2 text-black/90 text-4xl font-semibold tracking-tighter lg:leading-tight md:leading-tight capitalize drop-shadow-sm pl-3 sm:pl-0">
           Join India Centre for Policy Studies
         </h2>
       </div>
