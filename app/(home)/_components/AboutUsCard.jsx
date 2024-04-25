@@ -7,7 +7,7 @@ const AboutUsCard = () => {
   return (
     <div className="max-w-[1320px] mx-auto py-10 ">
       <Heading heading="About Us" href="/about/information" />
-      <div className="relative w-full shadow-sm border border-gray-300/50  flex h-full bg-[#eef2ff] lg:mt-8 rounded-3xl p-6">
+      <div className="relative w-full shadow-sm border border-gray-300/50 flex-col sm:flex-row flex h-full bg-[#eef2ff] lg:mt-8 rounded-3xl p-6">
         <Image
           src={Img3}
           alt="logo"

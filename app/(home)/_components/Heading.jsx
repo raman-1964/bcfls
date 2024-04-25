@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Heading = ({ heading, ...props }) => {
   return (
-    <div className="flex justify-between items-center mb-4">
+    <div className="flex justify-between items-center mb-4 px-2 md:px-0">
       <h1 className="text-2xl drop-shadow-sm text-black/90 font-semibold tracking-tight">
         {heading}
       </h1>

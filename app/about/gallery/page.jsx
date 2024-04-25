@@ -29,13 +29,13 @@ const AboutGalleryPage = () => {
         </div>
         <div className="px-4 md:px-0 max-w-full w-[1020px] mx-auto mt-[100px] md:-mt-[70px] relative md:rounded-2xl overflow-hidden">
           {/* <div className="animate-pulse absolute top-0 left-0 duration-50 w-[1020px] md:bg-gray-100 mx-auto rounded-2xl"></div> */}
-          <div className="grid grid-cols-3 gap-3 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 w-full">
             {[...Array(13).keys()].map((_, ind) => (
               <Link
                 className="flex shadow-sm hover:scale-[1.01] hover:shadow-lg group border border-gray-300/70 mx-auto md:flex-col md:justify-start bg-white p-2 md:my-0 md:mt-0 lg:mb-0 lg:my-0  transition-all duration-300 rounded-2xl font-inter w-full max-w-[490px]"
                 href={`/about/gallery/${ind + 3}`}
               >
-                <div className="group-hover:scale-[1.01]  transition-all duration-700 hidden md:inline-block my-auto md:my-0 shrink-0 h-[54px] w-[54px] md:w-full md:h-[164px] relative rounded-lg md:rounded-xl overflow-hidden border border-gray-100">
+                <div className="group-hover:scale-[1.01]  transition-all duration-700 md:inline-block my-auto md:my-0 shrink-0 w-full h-[164px] relative rounded-lg md:rounded-xl overflow-hidden border border-gray-100">
                   <Image
                     className="object-cover cursor-pointer"
                     layout="fill"
