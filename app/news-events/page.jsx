@@ -39,17 +39,6 @@ const NewsEventsPage = () => {
             <div class="w-full">
               <div class="flex group hover:shadow-lg hover:scale-[1.005] h-full sm:mt-0 flex-col hover:bg-white transition transition-all duration-300 p-3 bg-white shadow-sm border border-gray-300/60 rounded-2xl font-inter w-full">
                 <div class="w-full shrink-0 h-[240px] max-w-full md:h-[240px] md:max-w-full relative rounded-xl overflow-hidden border border-gray-100">
-                  <img
-                    alt="Touch-First Cursor: Round Pointers vs. Mouse Arrows"
-                    loading="lazy"
-                    class="object-cover absolute w-full h-full group-hover:scale-[1.03] transition transition-all duration-700 cursor-pointer"
-                    sizes="100vw"
-                    src="https://prototyprio.gumlet.io/strapi/4b5c24a0784944388b876737b92d9f1a.png?w=3840&amp;q=75&amp;format=webp&amp;compress=true&amp;dpr=2"
-                    style={{
-                      inset: "0px",
-                      color: "transparent",
-                    }}
-                  />
                   <Image
                     src={e.image}
                     alt="logo"
@@ -66,34 +55,23 @@ const NewsEventsPage = () => {
                     <div class="mb-6 text-gray-600 line-clamp-2">
                       {e.description}
                     </div>
-                    <div class="mb-3.5">
-                      <div class="flex font-inter w-full max-w-[300px]">
-                        <div class="pl-1.5 flex my-auto flex-wrap">
-                          <h2 class="line-clamp-1 my-auto font-regular text-sm">
-                            Rohan Kumar{" "}
+                    <div class="flex w-full my-auto items-start justify-between">
+                      <div className="flex flex-1 flex-wrap">
+                        {e.keynoteSpeaker.map((sp) => (
+                          <h2 className="capitalize inline-block text-xs px-2 py-0.5 font-medium bg-[#ecf0f5] text-black/80 rounded-full mr-2">
+                            {sp.name}
                           </h2>
-                          <div class="px-1 text-sm my-auto text-gray-500 font-bold hidden md:inline-block">
-                            ·
-                          </div>
-                          <p class="md:line-clamp-1 my-auto text-gray-500 text-sm hidden md:inline-block">
-                            <time
-                              datetime="1655679600000"
-                              class="text-xs text-gray-500 my-auto"
-                            >
-                              Jun 20
-                            </time>
-                          </p>
-                        </div>
+                        ))}
                       </div>
-                    </div>
-                  </div>
-                  <div class="flex text-xs">
-                    <div class=" capitalize inline-block text-xs px-2 py-0.5 font-medium bg-[#ecf0f5] text-black/80 rounded-full mr-2">
-                      product design
-                    </div>
 
-                    <div class=" capitalize inline-block text-xs px-2 py-0.5 font-medium bg-[#ecf0f5] text-black/80 rounded-full mr-2">
-                      product build
+                      <div className="flex w-[90px]">
+                        <p class="px-1 text-sm my-auto text-gray-500 mt-[-0.25rem] font-bold hidden md:inline-block">
+                          .
+                        </p>
+                        <p class="md:line-clamp-1 my-auto text-gray-500 text-sm hidden md:inline-block">
+                          {e.date}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -41,21 +41,23 @@ const NewsCard = () => {
                     <p className="mb-6 text-gray-600 line-clamp-2">
                       {e.description}
                     </p>
-                    <div className="flex my-auto flex-wrap">
-                      <h2 className="line-clamp-1 my-auto font-regular text-sm">
-                        Rohan Kumar
-                      </h2>
-                      <div className="px-1 text-sm my-auto text-gray-500 font-bold hidden md:inline-block">
-                        ·
+                    <div class="flex w-full my-auto items-start justify-between">
+                      <div className="flex flex-1 flex-wrap">
+                        {e.keynoteSpeaker.map((sp) => (
+                          <h2 className="capitalize inline-block text-xs px-2 py-0.5 font-medium bg-[#ecf0f5] text-black/80 rounded-full mr-2">
+                            {sp.name}
+                          </h2>
+                        ))}
                       </div>
-                      <p className="md:line-clamp-1 my-auto text-gray-500 text-sm hidden md:inline-block">
-                        <time
-                          datetime="1669025554408"
-                          className="text-xs text-gray-500 my-auto"
-                        >
-                          Nov 21
-                        </time>
-                      </p>
+
+                      <div className="flex w-[90px]">
+                        <p class="px-1 text-sm my-auto text-gray-500 mt-[-0.25rem] font-bold hidden md:inline-block">
+                          .
+                        </p>
+                        <p class="md:line-clamp-1 my-auto text-gray-500 text-sm hidden md:inline-block">
+                          {e.date}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>

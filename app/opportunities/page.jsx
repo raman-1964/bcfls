@@ -2,6 +2,7 @@
 import { postOpportunitiesApi } from "@/services/opportunities.service";
 import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const OpportunitiesPage = () => {
   const [opportunityData, setOpportunityData] = useState({
@@ -126,13 +127,22 @@ const OpportunitiesPage = () => {
       <button
         className="outline-none my-4 border-none bg-black text-[#fff] text-[16px] font-bold rounded px-8 py-1.5"
         onClick={() => {
-          mutate(opportunityData);
-          setOpportunityData({
-            name: "",
-            institute: "",
-            email: "",
-            phone: "",
-          });
+          if (!opportunityData.name) toast.error("name field is required");
+          else if (!opportunityData.email)
+            toast.error("email field is required");
+          else if (!opportunityData.phone)
+            toast.error("phone field is required");
+          else if (!opportunityData.institute)
+            toast.error("institute field is required");
+          else {
+            mutate(opportunityData);
+            setOpportunityData({
+              name: "",
+              institute: "",
+              email: "",
+              phone: "",
+            });
+          }
         }}
       >
         submit

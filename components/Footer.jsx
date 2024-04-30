@@ -1,10 +1,20 @@
 "use client";
 
+import { postNewsLetterApi } from "@/services/news-letter.services";
+import { useMutation } from "@tanstack/react-query";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
   const pathname = usePathname();
+
+  const { mutate } = useMutation({
+    mutationFn: (data) => postNewsLetterApi(data),
+  });
+
   return (
     <>
       <footer className={`${pathname === "/" ? "bg-[#CCE6FF]" : "bg-white"}`}>
@@ -22,16 +32,18 @@ export default function Footer() {
                 <div className="rounded-md mb-12 lg:mb-0">
                   <div>
                     <div className="flex flex-col">
-                      <form className="sm:flex w-11/12 mt-5 mb-6">
+                      <duv className="sm:flex w-11/12 mt-5 mb-6">
                         <div className="sm:flex-1 sm:max-w-xs w-full">
                           <label for="Email" className="sr-only ">
                             Enter your email
                           </label>
                           <input
                             id="Email"
-                            type="text"
+                            type="email"
                             placeholder="Enter your email"
                             name="emailRequired"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             className="border-transparent border-solid border-2 border-gradient-br-blue-darkblue-gray-50 hover:border-gradient-tl-blue-darkblue-gray-50 gradient-border-3 w-full h-full p-3 text-gray-800 bg-white rounded-full text-[0.875rem]"
                             style={
                               pathname !== "/"
@@ -56,17 +68,21 @@ export default function Footer() {
                                   }
                                 : null
                             }
+                            onClick={() => {
+                              if (email) mutate({ email });
+                              else toast.error("email field is mandatory");
+                              setEmail("");
+                            }}
                           >
                             Subscribe
                           </button>
                         </div>
-                      </form>
+                      </duv>
                     </div>
                     <div className="px-1 w-10/12 mx-auto"></div>
                   </div>
                 </div>
                 <p className="text-sm text-gray-700 font-semibold mt-2">
-                  {" "}
                   © 2024 ICPS, All rights reserved.
                 </p>
               </div>
