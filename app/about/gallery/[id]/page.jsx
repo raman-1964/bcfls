@@ -11,7 +11,7 @@ const SingleImagePage = () => {
           className="object-cover rounded-md"
           width={1000}
           height={1000}
-          src={`/images/image${params.id}.jpg`}
+          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}${params.id}`}
           alt="logo"
         />
       </div>

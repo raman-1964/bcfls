@@ -29,19 +29,18 @@ export default function Home() {
               data={bannerData.data.map((e) => (
                 <div className="min-w-0 flex-grow flex-shrink-0 w-full flex items-center justify-center">
                   <Image
-                    layout="fixed"
                     src={e.image}
+                    className="w-full object-cover h-[70vh] rounded-md"
+                    width={1000}
+                    height={1000}
                     alt="logo"
-                    width="100"
-                    height="100"
-                    className="w-full h-[70vh] rounded-md"
                   />
                 </div>
               ))}
             />
           </div>
           <AboutUsCard />
-          {/* <NewsCard /> */}
+          <NewsCard />
           <div class="py-16 pt-14  bg-[#ffffff] mx-auto px-6 md:px-3">
             <div class="max-w-[1320px] mx-auto">
               <div class=" flex-col grid gap-4 md:gap-6 grid-cols-12">
