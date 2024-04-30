@@ -1,6 +1,6 @@
 import "./globals.css";
 import { siteConfig } from "@/config/site";
-import App from "./app";
+import App from "./App";
 
 export const metadata = {
   title: {
