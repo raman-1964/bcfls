@@ -28,7 +28,6 @@ const RecentVideos = () => {
     queryFn: () => getGalleryApi(true),
   });
 
-  console.log(data?.data);
   return (
     <>
       {!isLoading ? (

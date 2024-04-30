@@ -159,12 +159,15 @@ const Navbar = () => {
         <div
           className={`mx-auto relative flex h-10 items-center justify-between`}
         >
-          <Link href="/">
-            <div className="items-center hover:opacity-75 transition gap-2">
-              {/* <Image src="/logo.svg" alt="logo" height={30} width={30} /> */}
-              <p className="text-lg text-neutral-700">BCFL</p>
-            </div>
-          </Link>
+          <button
+            className="items-center border-none outline-none hover:opacity-75 transition gap-2"
+            onClick={() => {
+              router.push("/");
+              setShowNavigation(false);
+            }}
+          >
+            <Image src="/logo.svg" alt="logo" height={40} width={40} />
+          </button>
           <div className="space-x-4 md:w-auto items-center justify-between w-full hidden md:flex">
             {navigationBar()}
           </div>

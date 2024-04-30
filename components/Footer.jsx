@@ -1,5 +1,6 @@
 "use client";
 
+import { validateEmail } from "@/lib/utils";
 import { postNewsLetterApi } from "@/services/news-letter.services";
 import { useMutation } from "@tanstack/react-query";
 import Link from "next/link";
@@ -69,8 +70,11 @@ export default function Footer() {
                                 : null
                             }
                             onClick={() => {
-                              if (email) mutate({ email });
-                              else toast.error("email field is mandatory");
+                              if (email) {
+                                if (!validateEmail(email))
+                                  toast.error("email is invalid");
+                                else mutate({ email });
+                              } else toast.error("email field is mandatory");
                               setEmail("");
                             }}
                           >

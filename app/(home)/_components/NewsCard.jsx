@@ -42,19 +42,19 @@ const NewsCard = () => {
                       {e.description}
                     </p>
                     <div class="flex w-full my-auto items-start justify-between">
-                      <div className="flex flex-1 flex-wrap">
+                      <div className="flex flex-1 flex-wrap gap-1">
                         {e.keynoteSpeaker.map((sp) => (
-                          <h2 className="capitalize inline-block text-xs px-2 py-0.5 font-medium bg-[#ecf0f5] text-black/80 rounded-full mr-2">
+                          <h2 className="capitalize inline-block text-xs px-2 py-0.5 font-medium bg-[#ecf0f5] text-black/80 rounded-full">
                             {sp.name}
                           </h2>
                         ))}
                       </div>
 
-                      <div className="flex w-[90px]">
-                        <p class="px-1 text-sm my-auto text-gray-500 mt-[-0.25rem] font-bold hidden md:inline-block">
+                      <div className="hidden md:flex w-[100px]">
+                        <p class="px-1 text-sm my-auto text-gray-500 mt-[-0.25rem] font-bold">
                           .
                         </p>
-                        <p class="md:line-clamp-1 my-auto text-gray-500 text-sm hidden md:inline-block">
+                        <p class="md:line-clamp-1 my-auto text-gray-500 text-sm">
                           {e.date}
                         </p>
                       </div>

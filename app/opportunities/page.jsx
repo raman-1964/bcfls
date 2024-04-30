@@ -1,4 +1,5 @@
 "use client";
+import { validateEmail } from "@/lib/utils";
 import { postOpportunitiesApi } from "@/services/opportunities.service";
 import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
@@ -134,6 +135,8 @@ const OpportunitiesPage = () => {
             toast.error("phone field is required");
           else if (!opportunityData.institute)
             toast.error("institute field is required");
+          else if (!validateEmail(opportunityData.email))
+            toast.error("email is invalid");
           else {
             mutate(opportunityData);
             setOpportunityData({
