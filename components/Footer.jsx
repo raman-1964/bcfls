@@ -67,7 +67,10 @@ export default function Footer() {
                                     background: "#006adc",
                                     color: "#fff",
                                   }
-                                : null
+                                : {
+                                    background: "#fff",
+                                    color: "#006adc",
+                                  }
                             }
                             onClick={() => {
                               if (email) {
