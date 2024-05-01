@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const AboutInfoPage = () => {
   return (
     <div className="w-full mx-auto pb-5">
@@ -23,14 +25,13 @@ const AboutInfoPage = () => {
           </div>
         </div>
 
-        <div className="px-4 md:px-0 max-w-full w-[1020px] md:bg-blue-50 mx-auto mt-[3rem] md:-mt-[100px] relative md:rounded-2xl md:shadow-md md:outline md:outline-1 outline-gray-300/20 overflow-hidden">
-          <img
-            loading="lazy"
-            width="1020"
-            height="550"
-            decoding="async"
-            data-nimg="1"
-            src="https://prototyprio.gumlet.io/wp-content/uploads/2021/02/Frame-21.png?w=2048&amp;q=75&amp;format=webp&amp;compress=true&amp;dpr=2"
+        <div className="px-4 md:px-0 max-w-full w-[1020px] opacity-[60%] md:bg-blue-50 mx-auto mt-[3rem] md:-mt-[100px] relative md:rounded-2xl md:shadow-md md:outline md:outline-1 outline-gray-300/20 overflow-hidden">
+          <Image
+            src="/logo.svg"
+            className="w-full object-contain h-[40vh] rounded-md"
+            width={1000}
+            height={1000}
+            alt="logo"
           />
         </div>
 

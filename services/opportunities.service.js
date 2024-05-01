@@ -6,7 +6,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 export const postOpportunitiesApi = async (data) => {
   try {
     const response = await axios.post(BASE_URL + "opportunities/", data);
-    toast.success("data sent successfully");
+    toast.success("Data sent successfully");
     return response.data;
   } catch (errorData) {
     handleDjangoErrors(errorData);

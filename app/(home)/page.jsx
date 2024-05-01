@@ -1,7 +1,7 @@
 "use client";
 import AboutUsCard from "@/app/(home)/_components/AboutUsCard";
 import Carousel from "@/components/Carousel";
-import NewsCard from "@/app/(home)/_components/NewsCard";
+import NewsCard from "@/components/NewsCard";
 import Image from "next/image";
 import RecentVideos from "@/app/(home)/_components/RecentVideos";
 import { useQuery } from "@tanstack/react-query";
@@ -43,6 +43,7 @@ export default function Home() {
       </div>
 
       <AboutUsCard />
+
       <NewsCard />
       <div class="py-16 pt-14  bg-[#ffffff] mx-auto px-6 md:px-3">
         <div class="max-w-[1320px] mx-auto">

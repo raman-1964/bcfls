@@ -51,7 +51,7 @@ const AboutGalleryPage = () => {
                       className="flex shadow-sm hover:scale-[1.01] hover:shadow-lg group border border-gray-300/70 mx-auto md:flex-col md:justify-start bg-white p-2 md:my-0 md:mt-0 lg:mb-0 lg:my-0  transition-all duration-300 rounded-2xl font-inter w-full max-w-[490px]"
                       href={`/about/gallery/${e.image.split("/")[5]}`}
                     >
-                      <div className="group-hover:scale-[1.01]  transition-all duration-700 md:inline-block my-auto md:my-0 shrink-0 w-full h-[164px] relative rounded-lg md:rounded-xl overflow-hidden border border-gray-100">
+                      <div className="group-hover:scale-[1.01]  transition-all duration-700 md:inline-block my-auto md:my-0 shrink-0 w-full h-[245px] relative rounded-lg md:rounded-xl overflow-hidden border border-gray-100">
                         <Image
                           className="object-cover cursor-pointer"
                           layout="fill"

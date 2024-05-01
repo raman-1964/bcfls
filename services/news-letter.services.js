@@ -6,7 +6,9 @@ const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 export const postNewsLetterApi = async (data) => {
   try {
     const response = await axios.post(BASE_URL + "news-letter/", data);
-    toast.success("data sent successfully");
+    toast.success(
+      "Thanks for subscribing. We'll keep you posted on upcoming events."
+    );
     return response.data;
   } catch (errorData) {
     handleDjangoErrors(errorData);
