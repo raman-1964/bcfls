@@ -13,3 +13,13 @@ export const getNewsEventsApi = async (is_home_page) => {
     throw Error(errorData.response?.data ?? "something went wrong");
   }
 };
+
+export const getSingleNewsEventsApi = async (id) => {
+  try {
+    const response = await axios.get(BASE_URL + `news-event/?id=${id}`);
+    return response.data;
+  } catch (errorData) {
+    handleDjangoErrors(errorData);
+    throw Error(errorData.response?.data ?? "something went wrong");
+  }
+};

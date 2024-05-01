@@ -1,7 +1,3 @@
-import Image from "next/image";
-import React from "react";
-import Img3 from "../../../assets/img3.jpg";
-
 const AboutInfoPage = () => {
   return (
     <div className="w-full mx-auto pb-5">
@@ -20,9 +16,11 @@ const AboutInfoPage = () => {
               Information
             </p>
           </div>
-          <h1 className="md:pb-[112px] text-5xl mx-auto tracking-tight md:text-6.5xl w-full leading-tight max-w-[44rem] text-black/90 font-inter font-bold text-left drop-shadow-sm">
-            India Centre for Policy Studies
-          </h1>
+          <div className="md:pb-[112px] w-[1020px] max-w-full mx-auto">
+            <h1 className=" text-5xl tracking-tight md:text-6.5xl w-full leading-tight max-w-[44rem] text-black/90 font-inter font-bold text-left drop-shadow-sm">
+              India Centre for Policy Studies
+            </h1>
+          </div>
         </div>
 
         <div className="px-4 md:px-0 max-w-full w-[1020px] md:bg-blue-50 mx-auto mt-[3rem] md:-mt-[100px] relative md:rounded-2xl md:shadow-md md:outline md:outline-1 outline-gray-300/20 overflow-hidden">
