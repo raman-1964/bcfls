@@ -31,7 +31,7 @@ const SingleNewsEvents = () => {
               }}
             >
               <div className="md:pb-[112px] w-[1020px] max-w-full mx-auto">
-                <h1 className=" text-5xl tracking-tight md:text-6.5xl w-full leading-tight max-w-[44rem] text-black/90 font-inter font-bold text-left drop-shadow-sm">
+                <h1 className=" text-5xl tracking-tight md:text-6.5xl w-full leading-tight text-black/90 font-inter font-bold text-left drop-shadow-sm">
                   {data.data[0].title}
                 </h1>
               </div>
