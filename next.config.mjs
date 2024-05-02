@@ -18,6 +18,6 @@
 
 export default {
   images: {
-    domains: ["127.0.0.1"], // Add the hostname here
+    domains: ["127.0.0.1", "bcfls.onrender.com"], // Add the hostname here
   },
 };
