@@ -25,7 +25,7 @@ const AboutInfoPage = () => {
           </div>
         </div>
 
-        <div className="px-4 md:px-0 max-w-full w-[1020px] opacity-[60%] md:bg-blue-50 mx-auto mt-[3rem] md:-mt-[100px] relative md:rounded-2xl md:shadow-md md:outline md:outline-1 outline-gray-300/20 overflow-hidden">
+        <div className="px-4 md:px-0 max-w-full w-[1020px] mx-auto mt-[3rem] md:-mt-[100px] relative overflow-hidden">
           <Image
             src="/logo.svg"
             className="w-full object-contain h-[40vh] rounded-md"

@@ -20,7 +20,7 @@ const RecentVideos = () => {
         {!isLoading ? (
           <>
             <Image
-              src={data?.data?.[0].image}
+              src={data?.data?.[0]?.image}
               alt="logo"
               className="!w-full mb-10 !h-[30vh] rounded-md object-cover"
               width={1000}

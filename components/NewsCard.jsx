@@ -50,8 +50,8 @@ const NewsCard = ({ is_home_page = true }) => {
                       width={1000}
                       height={1000}
                     />
-                    <div className="mt-3 flex flex-col px-[10px] justify-between h-full">
-                      <h1 className="text-lg tracking-tight mb-3 font-medium leading-snug line-clamp-2">
+                    <div className="mt-2 flex flex-col px-[10px] justify-between h-full">
+                      <h1 className="text-lg tracking-tight mb-2 font-medium leading-snug line-clamp-2">
                         {e.title}
                       </h1>
                       {/* <p className="mb-6 text-gray-600 line-clamp-2">
@@ -64,6 +64,10 @@ const NewsCard = ({ is_home_page = true }) => {
                           </h2>
                         ))}
                       </div>
+                      <p className="md:line-clamp-1 text-gray-500 text-sm mt-2">
+                        <span className="text-black">Venue: </span>{" "}
+                        {e.venue}
+                      </p>
                       <div className="flex w-full mt-4 flex-wrap items-center justify-between gap-4">
                         <p className="md:line-clamp-1 text-gray-500 text-sm">
                           {e.date}
@@ -72,10 +76,6 @@ const NewsCard = ({ is_home_page = true }) => {
                           {e.mode}
                         </p>
                       </div>
-                      <p className="md:line-clamp-1 text-gray-500 text-sm">
-                        <span className="text-[1rem] text-black">venue: </span>{" "}
-                        {e.venue}
-                      </p>
                     </div>
                   </div>
                 ))}

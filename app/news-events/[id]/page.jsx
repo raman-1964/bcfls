@@ -32,7 +32,7 @@ const SingleNewsEvents = () => {
             >
               <div className="md:pb-[112px] w-[1020px] max-w-full mx-auto">
                 <h1 className=" text-5xl tracking-tight md:text-6.5xl w-full leading-tight max-w-[44rem] text-black/90 font-inter font-bold text-left drop-shadow-sm">
-                  India Centre for Policy Studies
+                  {data.data[0].title}
                 </h1>
               </div>
             </div>
@@ -48,53 +48,85 @@ const SingleNewsEvents = () => {
             </div>
 
             <div className="relative px-6 md:px-0 max-w-full w-[1020px] mx-auto pt-4 pb-10">
-              <p className="mb-5 text-[1.2rem] font-semibold">
-                {data.data[0].title}
-              </p>
               <p className="mb-3">{data.data[0].description}</p>
-              <span className="text-[1.2rem] font-semibold text-black">
+              <span className="text-md font-semibold text-black/80">
                 Keynote Speaker:
               </span>
-              <div className="flex w-full mt-1 flex-wrap gap-1">
-                {data.data[0]?.keynoteSpeaker?.map((sp) => (
-                  <h2 className="capitalize inline-block text-[0.9rem] px-2 py-0.5 font-medium bg-[#ecf0f5] text-black/80 rounded-full">
-                    {sp.name}
-                  </h2>
-                ))}
-              </div>
-              <span className="text-[1.2rem] font-semibold text-black">
-                Program Coordinator:
-              </span>
-              <div className="flex w-full mt-1 flex-wrap gap-1">
-                {data.data[0]?.programCoordinator?.map((sp) => (
-                  <h2 className="capitalize inline-block text-[0.9rem] px-2 py-0.5 font-medium bg-[#ecf0f5] text-black/80 rounded-full">
-                    {sp.name}
-                  </h2>
-                ))}
-              </div>
-              <span className="text-[1.2rem] font-semibold text-black">
-                Chair Person:
-              </span>
-              <div className="flex w-full mt-1 flex-wrap gap-1">
-                {data.data[0]?.chairPerson?.map((sp) => (
-                  <h2 className="capitalize inline-block text-[0.9rem] px-2 py-0.5 font-medium bg-[#ecf0f5] text-black/80 rounded-full">
-                    {sp.name}
-                  </h2>
+              <div className="relative mt-2 flex flex-col gap-4 mb-4">
+                {data.data[0]?.keynoteSpeaker?.map((sp, index) => (
+                  <div className="flex items-center gap-x-4">
+                    <h2 className="h-10 w-10 flex items-center justify-center capitalize  font-medium bg-[#ecf0f5] text-black/80 rounded-full">
+                      {index + 1}
+                    </h2>
+                    {/* <img src={post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-50" /> */}
+                    <div className="text-sm leading-6">
+                      <p className="font-semibold text-gray-900">
+                        <span className="absolute inset-0" />
+                        {sp.name}
+                      </p>
+                      <p className="text-gray-600">{sp.title}</p>
+                    </div>
+                  </div>
                 ))}
               </div>
 
-              <div className="flex w-full mt-6 flex-wrap gap-3 items-center">
-                <p className="text-[1rem] font-semibold text-black">Venue:</p>
-                <h2 className="capitalize inline-block text-[1rem] px-2 py-0.5 font-medium text-black/80 ">
+              <span className="text-md font-semibold text-black/80">
+                Program Coordinator:
+              </span>
+              <div className="relative mt-2 flex flex-col gap-4 mb-4">
+                {data.data[0]?.programCoordinator?.map((sp, index) => (
+                  <div className="flex items-center gap-x-4">
+                    <h2 className="h-10 w-10 flex items-center justify-center capitalize  font-medium bg-[#ecf0f5] text-black/80 rounded-full">
+                      {index + 1}
+                    </h2>
+                    {/* <img src={post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-50" /> */}
+                    <div className="text-sm leading-6">
+                      <p className="font-semibold text-gray-900">
+                        <span className="absolute inset-0" />
+                        {sp.name}
+                      </p>
+                      <p className="text-gray-600">{sp.title}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <span className="text-md font-semibold text-black/80">
+                Chair Person:
+              </span>
+              <div className="relative mt-2 flex flex-col gap-4 mb-4">
+                {data.data[0]?.chairPerson?.map((sp, index) => (
+                  <div className="flex items-center gap-x-4">
+                    <h2 className="h-10 w-10 flex items-center justify-center capitalize  font-medium bg-[#ecf0f5] text-black/80 rounded-full">
+                      {index + 1}
+                    </h2>
+                    {/* <img src={post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-50" /> */}
+                    <div className="text-sm leading-6">
+                      <p className="font-semibold text-gray-900">
+                        <span className="absolute inset-0" />
+                        {sp.name}
+                      </p>
+                      <p className="text-gray-600">{sp.title}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex w-full mt-2 flex-wrap gap-3 items-center">
+                <p className="text-md font-semibold text-black/80">Mode:</p>
+                <h2 className="capitalize inline-block text-md px-2 py-0.5 font-medium text-black/80 ">
+                  {data.data[0].mode}
+                </h2>
+              </div>
+              <div className="flex w-full mt-2 flex-wrap gap-3 items-center">
+                <p className="text-md font-semibold text-black/80">Venue:</p>
+                <h2 className="capitalize inline-block text-md px-2 py-0.5 font-medium text-black/80 ">
                   {data.data[0].venue}
                 </h2>
               </div>
-              <div className="flex w-full mt-1 flex-wrap gap-6 items-center">
-                <p className="text-[1rem] font-semibold text-black">
+              <div className="flex w-full mt-2 flex-wrap gap-3 items-center">
+                <p className="text-md font-semibold text-black/80">Date:</p>
+                <h2 className="capitalize inline-block text-md px-2 py-0.5 font-medium text-black/80 ">
                   {data.data[0].date}
-                </p>
-                <h2 className="capitalize text-[1rem] font-semibold text-black/80 ">
-                  {data.data[0].mode}
                 </h2>
               </div>
             </div>

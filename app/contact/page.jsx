@@ -5,8 +5,8 @@ const ContactPage = () => {
   return (
     <>
       <div class="w-full my-8 p-6 pt-0 pb-0 z-10 relative max-w-[1320px] px-6 md:px-3 mx-auto backdrop-blur-sm backdrop-opacity-20 h-full">
-        <div class="inline-flex mt-4 mb-8">
-          <h2 class="mt-2 text-black/90 text-4xl font-semibold tracking-tighter lg:leading-tight md:leading-tight capitalize drop-shadow-sm ">
+        <div class="inline-flex mt-12 mb-8">
+          <h2 class=" text-black/90 text-4xl font-semibold tracking-tighter lg:leading-tight md:leading-tight capitalize drop-shadow-sm ">
             For Further Information feel free to contact us
           </h2>
         </div>
