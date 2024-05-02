@@ -1,4 +1,4 @@
-import styles from "./Skeleton.module.css";
+import styles from "./skeleton.module.css";
 const Skeleton = ({ className, isWhiteLoader = false }) => {
   return (
     <div
